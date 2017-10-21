@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <div class="container">
+        <div class="main-nav__container">
+          <div class="logo">
+            <a href="index.html">
+              <picture>
+                <source srcset="img/logo--tablet.png" media="(min-width: 620px) and (max-width: 1010px)">
+                <source srcset="img/logo--desktop.png" media="(min-width: 1010px)">
+                <img src="img/logo.png" alt="Pink">
+              </picture>
+            </a>
+          </div>
+          <button class="btn main-nav__toggle">
+            Закрыть меню
+            <span class="main-nav__toggle-element"></span>
+            <span class="main-nav__toggle-element"></span>
+            <span class="main-nav__toggle-element"></span>
+          </button>
+          <div class="main-nav__wrapper main-nav__wrapper--closed">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="download">
+      <div class="download__wrapper">
+        <h1 class="download__title">
+          Взгляните<br>
+          на жизнь<br>
+          иначе!
+        </h1>
+        <a href="#" class="btn download__btn">Скачать приложение</a>
+        <ul class="download__platforms">
+          <li class="download__platform"><a href="#" title="Apple"><img src="img/apple-logo.svg" alt="Apple"></a></li>
+          <li class="download__platform"><a href="#" title="Android"><img src="img/android-logo.svg" alt="Android"></a></li>
+          <li class="download__platform"><a href="#" title="Microsoft"><img src="img/microsoft-logo.svg" alt="Microsoft"></a></li>
+        </ul>
+        <p class="download__descr">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </section>
+  </header>
+  <main class="main">
+    <section class="promo clearfix">
+      <h2 class="promo__title">
+        <span>
+          Устали от серости мегаполиса?
+        </span>
+        <span>
+          Нам есть, что вам<br>
+          предложить!
+        </span>
+      </h2>
+      <div class="features">
+        <svg class="features__bg-skew" width="100%" height="32" preserveAspectRatio="none" viewBox="0 0 100 32">
+          <polygon points="0,32 100,0 0,0" fill="#fff"/>
+        </svg>
+        <div class="features__wrapper clearfix">
+          <img src="img/promo_bg--tablet.png" width="268" height="548" alt="">
+          <div class="features__list clearfix">
+            <div class="features__item">
+              <strong class="features__title">Поднимает настроение</strong>
+              <p class="features__descr">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </div>
+            <div class="features__item">
+              <strong class="features__title">Меняет мир вокруг</strong>
+              <p class="features__descr">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </div>
+            <div class="features__item">
+              <strong class="features__title">Заводит новых друзей</strong>
+              <p class="features__descr">
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="promo__stat clearfix">
+        <div class="promo__stat-container clearfix">
+          <div class="promo__stat-wrapper">
+            <b><span>Эффект</span> на 24 часа!</b>
+            <p>
+              Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="reviews slider">
+        <div class="reviews__slide">
+          <header class="reviews__intro">
+            <cite class="reviews__author">Николай Петров</cite>
+            <span class="reviews__descr">25 лет, водитель трамвая</span>
+          </header>
+          <blockquote class="reviews__quote">
+            «Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со
+            своей будущей женой в комментариях к выложенной фотографии!»
+          </blockquote>
+        </div>
+        <div class="reviews__slide">
+          <header class="reviews__intro">
+            <cite class="reviews__author">Николай Петров</cite>
+            <span class="reviews__descr">25 лет, водитель трамвая</span>
+          </header>
+          <blockquote class="reviews__quote">
+            «Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со
+            своей будущей женой в комментариях к выложенной фотографии!»
+          </blockquote>
+        </div>
+        <div class="reviews__slide">
+          <header class="reviews__intro">
+            <cite class="reviews__author">Николай Петров</cite>
+            <span class="reviews__descr">25 лет, водитель трамвая</span>
+          </header>
+          <blockquote class="reviews__quote">
+            «Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со
+            своей будущей женой в комментариях к выложенной фотографии!»
+          </blockquote>
+        </div>
+      </section>
+    </div>
+    <section class="prices">
+      <svg class="prices__bg-skew" width="100%" height="32" preserveAspectRatio="none" viewBox="0 0 100 32">
+        <polygon points="0,32 100,0 0,0" fill="#fff"/>
+      </svg>
+      <div class="container">
+        <div class="prices__slider">
+          <div class="prices__slide">
+            <div class="prices__header">
+              <b class="prices__rate">База</b>
+              <span class="prices__amount">1,99$</span>
+            </div>
+            <ul class="prices__features">
+              <li class="prices__features-item clearfix">
+                <span>Розовый фильтр</span>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </li>
+              <li class="prices__features-item clearfix">
+                <span>Смайлики</span>
+                <img src="img/no.png" width="27" height="26" alt="No">
+              </li>
+              <li class="prices__features-item clearfix">
+                <span>Комментарии</span>
+                <img src="img/no.png" width="27" height="26" alt="No">
+              </li>
+            </ul>
+          </div>
+          <div class="prices__slide prices__slide--hit">
+            <div class="prices__header">
+              <b class="prices__rate">Стандарт</b>
+              <span class="prices__amount">3,99$</span>
+            </div>
+            <ul class="prices__features">
+              <li class="prices__features-item clearfix">
+                <span>Розовый фильтр</span>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </li>
+              <li class="prices__features-item clearfix">
+                <span>Смайлики</span>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </li>
+              <li class="prices__features-item clearfix">
+                <span>Комментарии</span>
+                <img src="img/no.png" width="27" height="26" alt="No">
+              </li>
+            </ul>
+          </div>
+          <div class="prices__slide">
+            <div class="prices__header">
+              <b class="prices__rate">Анлим</b>
+              <span class="prices__amount">9,99$</span>
+            </div>
+            <ul class="prices__features">
+              <li class="prices__features-item clearfix">
+                <span>Розовый фильтр</span>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </li>
+              <li class="prices__features-item clearfix">
+                <span>Смайлики</span>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </li>
+              <li class="prices__features-item clearfix">
+                <span>Комментарии</span>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <table class="prices__table" style="display:none;">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="prices__header">
+                <b class="prices__rate">База</b>
+                <span class="prices__amount">1,99$</span>
+              </th>
+              <th class="prices__header prices__header--hit">
+                <b class="prices__rate">Стандарт</b>
+                <span class="prices__amount">3,99$</span>
+              </th>
+              <th class="prices__header">
+                <b class="prices__rate">Анлим</b>
+                <span class="prices__amount">9,99$</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="prices__feature">Розовый фильтр</th>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </td>
+            </tr>
+            <tr>
+              <th class="prices__feature">Смайлики</th>
+              <td>
+                <img src="img/no.png" width="27" height="26" alt="No">
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </td>
+            </tr>
+            <tr>
+              <th class="prices__feature">Коментарии</th>
+              <td>
+                <img src="img/no.png" width="27" height="26" alt="No">
+              </td>
+              <td>
+                <img src="img/no.png" width="27" height="26" alt="No">
+              </td>
+              <td>
+                <img src="img/yes.png" width="31" height="21" alt="Yes">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <p class="contacts__title">
+          Остались вопросы?<br>
+          Свяжитесь с нами!
+        </p>
+        <div class="contacts__list">
+          <div class="contacts__item">
+            <b>
+              Звоните:
+            </b>
+            <a href="tel:+380959471031">+380 95-94-71-031</a>
+          </div>
+          <div class="contacts__item">
+            <b>
+              Пишите:
+            </b>
+            <a href="mailto:hasiev.elchin98@gmail.com">el.hasiev@gmail.com</a>
+          </div>
+          <div class="contacts__item">
+            <b>
+              Приезжайте в гости:
+            </b>
+            <a href="#map">
+              ул. Школьная, 19/8
+            </a>
+          </div>
+        </div>
+      </div>
+      <svg class="contacts__arrow-down" width="100%" height="35" viewBox="0 0 100 35" preserveAspectRatio="none" >
+        <polygon fill="#fff" points="0,0 50,35 100,0"/>
+      </svg>
+    </section>
+
+    <div id="map" class="map">
+
+    </div>
+  </main>
+  <footer class="main-footer container">
+    <div class="logo">
+      <a href="#">
+        <picture>
+          <source srcset="img/footer__logo--tablet.png" media="(min-width: 620px) and (max-width: 1010px)">
+          <source srcset="img/footer__logo--desktop.png" media="(min-width: 1010px)">
+          <img src="img/logo--tablet.png" alt="Pink">
+        </picture>
+      </a>
+    </div>
+    <section class="social">
+      <ul class="social__list">
+        <li class="social__item"><a href="#">Twitter</a></li>
+        <li class="social__item"><a href="#">Facebook</a></li>
+        <li class="social__item"><a href="#">YouTube</a></li>
+      </ul>
+    </section>
+    <section class="copyright">
+      Разработано:
+      <a href="#">
+        Элчин Хасиев
+      </a>
+    </section>
+  </footer>
+
+
+  <script defer src="js/jquery-3.2.1.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDusivgiw0t-ahK2IxLWtXIdNQ2gkrodFk&callback=initMap"></script>
+  <script defer src="js/script.js"></script>
+</body>
+</html>
