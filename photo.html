@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+<header class="main-header main-header--inner-page">
+  <nav class="main-nav">
+    <div class="container">
+      <div class="main-nav__container">
+        <div class="logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="img/logo--tablet.png" media="(min-width: 620px) and (max-width: 1010px)">
+              <source srcset="img/logo--desktop.png" media="(min-width: 1010px)">
+              <img src="img/logo.png" alt="Pink">
+            </picture>
+          </a>
+        </div>
+        <button class="btn main-nav__toggle">
+          Закрыть меню
+          <span class="main-nav__toggle-element"></span>
+          <span class="main-nav__toggle-element"></span>
+          <span class="main-nav__toggle-element"></span>
+        </button>
+        <div class="main-nav__wrapper main-nav__wrapper--closed">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="contest.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="index.html#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="main-header__title">
+      Фотографии<br> пользователей
+    </h1>
+  </div>
+</header>
+
+<main class="main">
+  <section class="photo-gallery">
+    <div class="container">
+      <p class="photo-gallery__descr">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+    </div>
+
+    <article class="photo-card photo-card--panorama photo-card--panorama-popular">
+      <div class="photo-card__panorama photo-card__panorama--popular">
+        <img src="img/panorama.jpg" width="1200" height="506" alt="Bridge">
+      </div>
+      <div class="photo-card__descr container">
+        <div class="photo-card__user-block">
+          <address class="photo-card__author">
+            Анна
+          </address>
+          <time class="photo-card__time">(5 Минут назад)</time>
+        </div>
+        <p class="photo-card__caption">
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите
+          прямую транслацию в перископе, задавайте свои вопросы!
+        </p>
+        <div class="photo-card__likes photo-card__likes--panorama">
+          <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+          <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+        </div>
+      </div>
+    </article>
+
+    <ul class="photo-gallery__list container">
+      <li class="photo-gallery__item">
+        <article class="photo-card">
+          <div class="photo-card__img-container">
+            <img src="img/photo-card__1.jpg" width="300" height="400" alt="Штатив">
+          </div>
+          <div class="photo-card__descr container">
+            <div class="photo-card__user-block">
+              <address class="photo-card__author">
+                Даниил
+              </address>
+              <time class="photo-card__time">(5 Часов назад)</time>
+            </div>
+            <p class="photo-card__caption">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <div class="photo-card__likes">
+              <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+              <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="photo-gallery__item">
+        <article class="photo-card">
+          <div class="photo-card__img-container">
+            <img src="img/photo-card__2.jpg" width="300" height="400" alt="Барабаны">
+          </div>
+          <div class="photo-card__descr container">
+            <div class="photo-card__user-block">
+              <address class="photo-card__author">
+                Антон
+              </address>
+              <time class="photo-card__time">(12 Часов назад)</time>
+            </div>
+            <p class="photo-card__caption">
+              Соседи будут рады!
+            </p>
+            <div class="photo-card__likes">
+              <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+              <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="photo-gallery__item">
+        <article class="photo-card">
+          <div class="photo-card__img-container">
+            <img src="img/photo-card__3.jpg" width="300" height="400" alt="Мысли">
+          </div>
+          <div class="photo-card__descr container">
+            <div class="photo-card__user-block">
+              <address class="photo-card__author">
+                Борис
+              </address>
+              <time class="photo-card__time">(20 Часов назад)</time>
+            </div>
+            <p class="photo-card__caption">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <div class="photo-card__likes">
+              <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+              <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+
+
+
+      <li class="photo-gallery__item">
+        <article class="photo-card">
+          <div class="photo-card__img-container">
+            <img src="img/photo-card__4.jpg" width="300" height="400" alt="Мысли">
+          </div>
+          <div class="photo-card__descr container">
+            <div class="photo-card__user-block">
+              <address class="photo-card__author">
+                Сергей
+              </address>
+              <time class="photo-card__time">(25 Часов назад)</time>
+            </div>
+            <p class="photo-card__caption">
+              Самая кубанская в мире!
+            </p>
+            <div class="photo-card__likes">
+              <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+              <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="photo-gallery__item">
+        <article class="photo-card">
+          <div class="photo-card__img-container">
+            <img src="img/photo-card__5.jpg" width="300" height="400" alt="Мысли">
+          </div>
+          <div class="photo-card__descr container">
+            <div class="photo-card__user-block">
+              <address class="photo-card__author">
+                Максим
+              </address>
+              <time class="photo-card__time">(40 Часов назад)</time>
+            </div>
+            <p class="photo-card__caption">
+              Где снег-то?
+            </p>
+            <div class="photo-card__likes">
+              <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+              <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="photo-gallery__item">
+        <article class="photo-card">
+          <div class="photo-card__img-container">
+            <img src="img/photo-card__6.jpg" width="300" height="400" alt="Мысли">
+          </div>
+          <div class="photo-card__descr container">
+            <div class="photo-card__user-block">
+              <address class="photo-card__author">
+                Надежда
+              </address>
+              <time class="photo-card__time">(45 Часов назад)</time>
+            </div>
+            <p class="photo-card__caption">
+              Всем GM и взаимные лайки!
+            </p>
+            <div class="photo-card__likes">
+              <button class="photo-card__likes-btn" type="button">Мне нравится!</button>
+              <a>Нравится: <span class="photo-card__likes-count">23</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+  </section>
+</main>
+
+<footer class="main-footer main-footer--inner-page container">
+  <div class="logo">
+    <a href="#">
+      <picture>
+        <source srcset="img/footer__logo--tablet.png" media="(min-width: 620px) and (max-width: 1010px)">
+        <source srcset="img/footer__logo--desktop.png" media="(min-width: 1010px)">
+        <img src="img/footer__logo--tablet.png" alt="Pink">
+      </picture>
+    </a>
+  </div>
+  <section class="social social--inner-page">
+    <ul class="social__list social__list--inner-page">
+      <li class="social__item social__item--inner-page"><a href="#">Twitter</a></li>
+      <li class="social__item social__item--inner-page"><a href="#">Facebook</a></li>
+      <li class="social__item social__item--inner-page"><a href="#">YouTube</a></li>
+    </ul>
+  </section>
+  <section class="copyright">
+    Разработано:<br>
+    <a href="mailto:el.hasiev@gmail.com">
+      Элчин Хасиев
+    </a>
+  </section>
+</footer>
+
+
+<script defer src="js/jquery-3.2.1.min.js"></script>
+<script defer src="js/slick.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDusivgiw0t-ahK2IxLWtXIdNQ2gkrodFk&callback=initMap"></script>
+<script defer src="js/script.js"></script>
+</body>
+</html>

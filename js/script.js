@@ -30,7 +30,7 @@
 			slidesToScroll: 1
 		});
 
-		$(".main-nav__item").on("click","a", function (event) {
+		$(".main-nav__item--contact").on("click","a", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href'),
 			top = $(id).offset().top;

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+<header class="main-header main-header--inner-page">
+  <nav class="main-nav">
+    <div class="container">
+
+      <div class="main-nav__container">
+
+        <div class="logo">
+          <a href="index.html">
+            <picture>
+              <source srcset="img/logo--tablet.png" media="(min-width: 620px) and (max-width: 1010px)">
+              <source srcset="img/logo--desktop.png" media="(min-width: 1010px)">
+              <img src="img/logo.png" alt="Pink">
+            </picture>
+          </a>
+        </div>
+        <button class="btn main-nav__toggle">
+          Закрыть меню
+          <span class="main-nav__toggle-element"></span>
+          <span class="main-nav__toggle-element"></span>
+          <span class="main-nav__toggle-element"></span>
+        </button>
+        <div class="main-nav__wrapper main-nav__wrapper--closed">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="contest.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="index.html#contacts">Контакты</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="main-header__title">
+      Конкурс на самое безбашеное путешествие с Пинк
+    </h1>
+  </div>
+</header>
+<main class="main main--inner-page">
+  <section class="contest-blank">
+    <div class="container">
+        <p class="contest-blank__descr">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span> Пожалуйста, заполните форму ниже:</span>
+        </p>
+    </div>
+    <form action="contest.html" method="post" class="contest-form" id="contestForm">
+
+      <div>
+        <fieldset class="contest-form__fieldset contest-form__fieldset--initials contest-form__fieldset--unstyled" form="contestForm">
+          <legend class="contest-form__legend hidden">Инициалы</legend>
+          <p>
+            <label>
+              <span class="contest-form__input-name">Фамилия:</span>
+              <input type="text" name="surname" placeholder="Укажите фамилию" required>
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="contest-form__input-name">Имя:</span>
+              <input type="text" name="name" placeholder="Введите ваше имя" required>
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="contest-form__input-name">Отчество:</span>
+              <input type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
+            </label>
+          </p>
+        </fieldset>
+      </div>
+
+      <div class="contest-form__fieldset-wrapper">
+        <fieldset class="contest-form__fieldset contest-form__fieldset--achievements" form="contestForm">
+          <legend class="contest-form__legend contest-form__legend--padding">Ваши безбашенные достижения в путешествии</legend>
+          <div>
+            <p>
+              <label>
+                <input type="checkbox" name="photo">
+                <span class="contest-form__input-name contest-form__input-name--inline">Сделал селфи с акулой</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="beach">
+                <span class="contest-form__input-name contest-form__input-name--inline">Обгорел на пляже</span>
+              </label>
+            </p>
+          </div>
+          <div>
+            <p>
+              <label>
+                <input type="checkbox" name="norris">
+                <span class="contest-form__input-name contest-form__input-name--inline">Видел Чака Норриса</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="souvenir">
+                <span class="contest-form__input-name contest-form__input-name--inline">Накупил сувениров</span>
+              </label>
+            </p>
+          </div>
+          <div>
+            <p>
+              <label>
+                <input type="checkbox" name="tower">
+                <span class="contest-form__input-name contest-form__input-name--inline">Удержал башню</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="hotel">
+                <span class="contest-form__input-name contest-form__input-name--inline">Сделал селфи с акулой</span>
+              </label>
+            </p>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset class="contest-form__fieldset contest-form__fieldset--contacts">
+          <legend class="contest-form__legend contest-form__legend--hidden">Контактная информация</legend>
+          <div>
+            <p>
+              <label>
+                <span class="contest-form__input-name">Номер телефона</span>
+                <input type="tel" name="tel" placeholder="Номер, пожалуйста" required>
+                <span class="contest-form__input-name contest-form__input-name--bottom">Номер телефона</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <span class="contest-form__input-name">Адрес почты</span>
+                <input type="email" name="email" placeholder="E-mail, пожалуйста" required>
+                <span class="contest-form__input-name contest-form__input-name--bottom">Адрес почты</span>
+              </label>
+            </p>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="contest-form__fieldset-wrapper">
+        <fieldset class="contest-form__fieldset contest-form__fieldset--application">
+          <legend class="contest-form__legend contest-form__legend--padding">
+            С каким приложением путешествовали?
+          </legend>
+          <p>
+            <label>
+              <input type="radio" name="application" value="ios" checked>
+              <span class="contest-form__input-name contest-form__input-name--inline">Pink для iOS</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="application" value="android">
+              <span class="contest-form__input-name contest-form__input-name--inline">Pink на Android</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="application" value="windows">
+              <span class="contest-form__input-name contest-form__input-name--inline">Windows Phone</span>
+            </label>
+          </p>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset class="contest-form__fieldset contest-form__fieldset--emotions">
+          <legend class="contest-form__legend contest-form__legend--padding">
+            Опишите свои эмоции
+          </legend>
+          <textarea name="message" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+      </div>
+
+      <div class="container">
+        <button class="contest-form__btn" type="submit">Отправить форму</button>
+      </div>
+
+    </form>
+  </section>
+
+</main>
+<footer class="main-footer main-footer--inner-page container">
+  <div class="logo">
+    <a href="#">
+      <picture>
+        <source srcset="img/footer__logo--tablet.png" media="(min-width: 620px) and (max-width: 1010px)">
+        <source srcset="img/footer__logo--desktop.png" media="(min-width: 1010px)">
+        <img src="img/footer__logo--tablet.png" alt="Pink">
+      </picture>
+    </a>
+  </div>
+  <section class="social social--inner-page">
+    <ul class="social__list social__list--inner-page">
+      <li class="social__item social__item--inner-page"><a href="#">Twitter</a></li>
+      <li class="social__item social__item--inner-page"><a href="#">Facebook</a></li>
+      <li class="social__item social__item--inner-page"><a href="#">YouTube</a></li>
+    </ul>
+  </section>
+  <section class="copyright">
+    Разработано:<br>
+    <a href="mailto:el.hasiev@gmail.com">
+      Элчин Хасиев
+    </a>
+  </section>
+</footer>
+
+
+  <script defer src="js/jquery-3.2.1.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDusivgiw0t-ahK2IxLWtXIdNQ2gkrodFk&callback=initMap"></script>
+  <script defer src="js/script.js"></script>
+</body>
+</html>
